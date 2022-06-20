@@ -33,16 +33,19 @@ Constraints:
 {Ai !=0 }'''
 def check_repeating(a):
     arr=a
+    temp=arr
     for i in arr:
-        if i in arr:
-            continue
+        temp.remove(i)
+        if i in temp:
+            temp.remove(i)
         else:
             return i
+    print (temp)
     
 if __name__ == '__main__':
     a=list(input().split())
     p=check_repeating(a)
     if p==None:
-        print('0')
+       print('0')
     else:
         print(p)
