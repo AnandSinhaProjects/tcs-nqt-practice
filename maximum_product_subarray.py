@@ -35,8 +35,6 @@ Constraints:
 -102 ≤ Arri ≤ 102
 '''
 
-from os import remove
-
 
 def maxProduct(arr, n):
     max=0

@@ -64,3 +64,4 @@ if __name__ == '__main__':
     A2 = list(map(int,input().split()))
     l=create_array(A1,A2)
     print(l)
+    
